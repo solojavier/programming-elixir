@@ -4,7 +4,7 @@ Example from Programming Elixir Book
 
 ## Install
 
-* To generate the executable use `mix escript.build`
+To generate the executable use `mix escript.build`
 
 ## How to run
 
@@ -19,3 +19,11 @@ Custom count
 Also you can run
 
     ./issues -h
+
+## Documentation
+
+You can generate project documentation with `mix docs`
+
+## Test
+
+Use default command: `mix test`
