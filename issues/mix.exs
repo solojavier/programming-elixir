@@ -4,6 +4,8 @@ defmodule Issues.Mixfile do
   def project do
     [app: :issues,
      version: "0.0.1",
+     name: "Issues",
+     source: "https://github.com/solojavier/programming-elixir/issues",
      elixir: "~> 1.0",
      escript: escript_config,
      deps: deps]
@@ -27,8 +29,10 @@ defmodule Issues.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-      { :httpoison, "~> 0.4" },
-      { :jsx,       "~> 2.0" }
+      { :httpoison, "~> 0.4"    },
+      { :jsx,       "~> 2.0"    },
+      { :earmark,    ">= 0.0.0" },
+      { :ex_doc,    github: "elixir-lang/ex_doc" },
     ]
   end
 
